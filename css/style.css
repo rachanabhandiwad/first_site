@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+  }
 h1{
     font-size: 40px;
     font-family: 'Times New Roman','Times New Roman', Times, serif;
@@ -77,13 +80,58 @@ nav a:hover{
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+    @keyframes example {
+        from {color: black;
+        text-decoration: none;}
+        to {color: blue;
+        text-decoration: underline;}
+    }
     .skip{
         display: none;
+    }
+    h1{
+        animation-name: example;
+        animation-duration: 5s;
     }
     .current-page {
         font-weight: bold;
         background-color: #8babf1;
         text-decoration: underline;
     }
-    
+    nav{
+        text-align: right;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+        display: grid;
+        grid-template-columns: 50px auto 500px auto 50px;
+        background-color: white;
+    }
+    nav a{
+        font-size: 30px;
+    }
+    .recipe{
+        grid-template-columns: 50px auto 500px auto 50px;
+    }
+    .recipe li{
+        margin-bottom: 20px;
+    }
+    .steps, .likes, .ingredients{
+        display: grid;
+    }
+    img, video{
+        margin: auto;
+        margin-bottom: 20px;
+        display: grid;
+        width: 400px;
+    }
+}
+@media screen and (prefers-reduced-motion: reduce){
+    h1{
+        animation:none;
+    }
+    .moving{
+        display: none;
+    }
 }
