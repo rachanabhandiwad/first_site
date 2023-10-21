@@ -1,21 +1,28 @@
 h1{
     font-size: 40px;
-    font-family: sans-serif;
+    font-family: 'Times New Roman','Times New Roman', Times, serif;
     text-align: center;
 }
 body{
-    background-color: #054fb9;
-    color: rgb(215, 234, 241);
+    background-color: #d9e4ff;
+    color: black;
 }
 h2{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
-    color: white;
+    color: black;
 }
 h3{
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.skip:focus{
+    display: block;
+    background-color: blue;
+    text-decoration: underline;
     color: white;
+    position:static;
 }
 p{
     line-height: 2.5;
@@ -51,20 +58,32 @@ li{
     margin-left: 80px;
 }
 
-nav a{
-    background-color: black;
-    padding: 5px;
-    margin: 20px;
-}
-
 nav{
     border: 2px solid black;
 }
 
-#skip{ 
-    text-transform: uppercase;
+nav a:hover{
+    background-color: blue;
+    text-decoration: underline;
+    color: white;
+    padding: 5px;
+    margin: 20px;
 }
 
-.thumbnail{
+*:focus{
+    border: 2px solid black;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .skip{
+        display: none;
+    }
+    .current-page {
+        font-weight: bold;
+        background-color: #8babf1;
+        text-decoration: underline;
+    }
     
 }
