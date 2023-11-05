@@ -57,28 +57,89 @@ video{
     
 }
 li{
-    display: inline;
+    display:inline;
     margin-left: 80px;
 }
 
-nav{
-    border: 2px solid black;
+@media only screen and (max-width: 768px){
+    nav{
+        border: 2px solid black;
+    }
+    
+    nav a:hover{
+        background-color: blue;
+        text-decoration: underline;
+        color: white;
+        padding: 5px;
+        margin: 20px;
+    }
+    *:focus{
+        border: 2px solid black;
+        text-decoration: underline;
+        background-color: white;
+    }
+    
+    .skip a{
+        background: white;
+        left: 0;
+        padding: 6px;
+        -webkit-transition: top 1s ease-out;
+        transition: top 1s ease-out;
+        z-index: 1;
+        position: absolute;
+        top: -40px;
+    }
+    h3{
+        size: 40px;
+        text-decoration: underline;
+    }
+    .skip a:focus{
+        position:absolute;
+        top: 10px;
+    }
+    .container{
+        display: grid;
+    }
+    .test img,video{
+        width: 300px;
+        height: 300px;
+    }
+    .recipe img,video{
+        width: 300px;
+        height: 300px;
+    }
+    .travel img,video{
+        width: 300px;
+        height: 300px;
+    }
+    .first img{
+        float: left; 
+        margin: 5px; 
+    }
+    .test li{
+        display: block;
+    }
+    #header a{
+        margin: 20px;
+    }
+    #header a:hover{
+        background-color: blue;
+        text-decoration: underline;
+        color: white;
+    }
+    .recipe li{
+        display: block;
+    }
 }
 
-nav a:hover{
-    background-color: blue;
-    text-decoration: underline;
-    color: white;
-    padding: 5px;
-    margin: 20px;
-}
 
-*:focus{
-    border: 2px solid black;
-    text-decoration: underline;
-}
+/*.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    gap: 15px;
+}*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     /* For mobile phones: */
     @keyframes example {
         from {color: black;
@@ -99,13 +160,7 @@ nav a:hover{
         text-decoration: underline;
     }
     nav{
-        text-align: right;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 0px;
-        padding-right: 0px;
-        display: grid;
-        grid-template-columns: 50px auto 500px auto 50px;
+        display: inline-block;
         background-color: white;
     }
     nav a{
