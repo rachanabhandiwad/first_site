@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="icon" href="/images/travel_icon.png" type="image/x-icon"> 
 <head>
     <h1>Travel</h1>
     <meta charset="UTF-8">
@@ -8,33 +9,49 @@
     <link rel="stylesheet" href="css/style.css"> 
     <title>Travel</title>
 </head>
-<body>
+<body id="travels">
     <div class="skip"><a href="">Skip to Main Content</a></div>
     <nav>
         <ul>
-            <li><a href="index.html">Home/Pets</a></li>
-            <li><a href = "recipes.html">Recipes</a></li>
-            <li><a href = "travel.html" class="current-page"> Travel </a></li>
+            <li><a href="index.html"  aria-label="Home/Pets">
+                <button class="button-54" role="button">Home/Pets</button>
+            </a></li>
+            <li><a href = "recipes.html" aria-label="Recipes">
+                <button class="button-54" role="button">Recipes</button>
+            </a></li>
+            <li><a href = "travel.html" class="current-page" aria-label="Travel">
+                <button class="button-54" role="button">Travel</button>
+            </a></li>
         </ul>
     </nav>
    
     <main class="container" id = "main">
         <header id="header">
             <h2>Select Location</h2>
+            <div class="option">
                 <ul>
-                    <a href="#Yellow">Yellowstone</a>
-                    <a href="#Mac">Mackinac Island</a>
-                    <a href="#Palace">Uddaipur</a>
-                    <a href="#Detroit">Detroit</a>
+                    <li><a href="#Yellow" aria-label="Skip to Yellowstone"> 
+                        <button class="button-55" role="button">Yellowstone</button>
+                    </a></li>
+                    <li><a href="#Mac" aria-label="Skip to Mackinac"> 
+                        <button class="button-55" role="button">Mackinac Island</button>
+                    </a></li>
+                    <li><a href="#Palace" aria-label="Skip to Uddaipur"> 
+                        <button class="button-55" role="button">Uddaipur</button>
+                    </a></li>
+                    <li><a href="#Detroit" aria-label="Skip to Detroit"> 
+                        <button class="button-55" role="button">Detroit</button>
+                    </a></li>
                 </ul>
+            </div>
         </header>
     <div class="travel">
         <div>
             <h2><a id="Yellow">Yellowstone</a></h2>
-    
-            <img src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron." class="moving">
-            <img src="images/yellowstone_cauldron.jpg" width = "400" alt="Bubbling cauldron">
-
+            <div class="begin">
+                <img src="images/yellowstone_cauldron.jpg" width = "400" alt="Bubbling cauldron" >
+                <img src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron." class="moving">
+            </div>
             <h3>Geographical Location: North America</h3>
             <p>Yellowstone is the first national park in the United States. It covers over 2.2 million acres, and provides an opportunity to see wildlife and explore geothermal areas.  In fact, Yellowstone contains about half the world's active geysers.</p>
             <p>These unique opportunities also bring out a lot of bad decisions among the tourists.  Every year visitors injure themselves or the wildlife by getting close to the animals.  You  can see examples of people making bad decisions by visiting <a href ="https://www.facebook.com/groups/yellowstonenationalparkinvasionoftheidiots/">Yellowstone National Park: Invasion of the Idiots</a>, <a href="https://www.instagram.com/touronsofyellowstone/?hl=en">Tourons of Yellowstone</a>, or  <a href="https://cowboystatedaily.com/">Cowboy State Daily</a>.</p>
@@ -77,9 +94,11 @@
         </div>
         <div>            
             <h2><a id="Mac">Mackinac Island</a></h2>
-    
+            
+            <div class="begin">
             <img src="images/mackisland.jpeg" width="400" alt="Rocks overlooking pier">
             <img src="images/mackgif.gif" width = "400" alt="Moving image of bridge" class="moving">
+            </div>
 
             <h3>Geographical Location: North America</h3>
             <p>Mackinac Island sits in Lake Huron, between Michigans Upper and Lower peninsulas. Mackinac Island State Park, with trails, woods and the limestone Arch Rock formation, covers most of the island. </p>
@@ -121,9 +140,11 @@
             </figure></div>
         <div>
             <h2><a id="Palace">The Palaces of Uddaipur</a></h2>
-    
+            
+            <div class="begin">
             <img src="images/uddaipur.jfif" width="400" alt="Uddaipur skyline">
             <img src="images/uddaigif.gif" width = "400" alt="Foggy Uddaipur skyline" class="moving">
+            </div>
 
             <h3>Geographical Location: India</h3>
             <p>Udaipur, formerly the capital of the Mewar Kingdom, is a city in the western Indian state of Rajasthan. </p>
@@ -165,9 +186,11 @@
         </div>
         <div>
             <h2><a id="Detroit">Detroit: The Motor City!</a></h2>
-    
+            
+            <div class="begin">
             <img src="images/detroitsky.jfif" width="400" alt="Detroit skyline">
             <img src="images/detroitfans.gif" width = "400" alt="Fans holding signs that spell Deeetroit" class="moving">
+            </div>
 
             <h3>Geographical Location: Michigan</h3>
             <p>Detroit, also known as the Motor City, is the biggest city in the midwest state Michigan</p>
@@ -209,5 +232,31 @@
         </div>
     </div>    
     </main>
+    <div id="content">
+        <button onclick="getRestaurantSuggestions()">Click here for restaurant suggestions from each location</button>
+        <ul id="suggestions"></ul>
+    </div>
+    
+    <script>
+        function getRestaurantSuggestions() {
+            const suggestions = {
+                Yellowstone: ["Grant Village Lakehouse Restaurant", "Old Faithful Inn", "Old Faithful Snow Lodge"],
+                "Mackinac Island": ["Yankee Rebel Tavern", "The Chuckwagon", "Seabiscuit Cafe"],
+                Udaipur: ["Tribute Restaurant", "Poppy by Royal Repast", "Hello boho Lakeview rooftop cafe"],
+                Detroit: ["Pegasus Taverna", "Vicente’s Cuban Cuisine", "Ottava Via"]
+            };
+    
+            const suggestionContainer = document.getElementById("suggestions");
+            suggestionContainer.innerHTML = ""; // Clear previous suggestions
+    
+            for (const location in suggestions) {
+                const locationSuggestions = suggestions[location];
+                const locationText = `${location}: ${locationSuggestions.join(", ")}`;
+                const paragraph = document.createElement("p");
+                paragraph.textContent = locationText;
+                suggestionContainer.appendChild(paragraph);
+            }
+        }
+    </script>
 </body>
 </html>

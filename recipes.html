@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <link rel="icon" href="/images/recipe_icon.png" type="image/x-icon"> 
 <head>
     <h1>Recipes</h1>
     <meta charset="UTF-8">
@@ -10,26 +10,44 @@
     <title>Recipes</title>
 </head>
 
-<body>
+<body id="recipes">
     <div class="skip"><a href="">Skip to Main Content</a></div>
     <nav>
         <ul>
-            <li><a href="index.html">Home/Pets</a></li>
-            <li><a href = "recipes.html" class="current-page">Recipes</a></li>
-            <li><a href = "travel.html">Travel </a></li>
+            <li><a href="index.html" aria-label="Home/Pets">
+                <button class="button-54" role="button">Home/Pets</button>
+            </a></li>
+            <li><a href = "recipes.html"  class="current-page" aria-label="Recipes">
+                <button class="button-54" role="button">Recipes</button>
+            </a></li>
+            <li><a href = "travel.html" aria-label="Travel">
+                <button class="button-54" role="button">Travel</button>
+            </a></li>
         </ul>
     </nav>
    
     <main class="container" id = "main">
         <header id="header">
             <h2>Select Recipe</h2>
+            <div class="option">
                 <ul>
-                    <a href="#Cookie">Double Chocolate Cookie</a>
-                    <a href="#Tofu">Mapo Tofu</a>
-                    <a href="#Burger">The Perfect Burger</a>
-                    <a href="#Dalgona">Dalgona Coffee</a>
-                    <a href="#Salad">Korean Cucumber Salad</a>
+                    <li><a href="#Cookie" aria-label="Skip to cookie">
+                        <button class="button-55" role="button">Double Chocolate Chip Cookies</button>
+                    </a></li>
+                    <li><a href="#Tofu" aria-label="Skip to tofu">
+                        <button class="button-55" role="button">Mapo Tofu</button>
+                    </a></li>
+                    <li><a href="#Burger" aria-label="Skip to burger">
+                        <button class="button-55" role="button">The Perfect Burger</button>
+                    </a></li>
+                    <li><a href="#Dalgona" aria-label="Skip to dalgona">
+                        <button class="button-55" role="button">Dalgona Coffee</button>
+                    </a></li>
+                    <li><a href="#Salad" aria-label="Skip to salad">
+                        <button class="button-55" role="button">Korean Cucumber Salad</button>
+                    </a></li>
                 </ul>
+            </div>
         </header>
     <div class = "recipe">
         <h2><a id="Cookie">Double Chocolate Cookies</a></h2>
@@ -43,30 +61,30 @@
         <div class="test">
         <h3>Recipe Ingredients</h3>
         <ul class = "ingredients">
-            <li>Unsalted butter</li>
-            <li>Granulated Sugar</li>
-            <li>Packed light or dark brown sugar</li>
-            <li>Large egg</li>
-            <li>Pure vanilla extract</li>
-            <li>Semi-sweet chocolate chunks (melted)</li>
-            <li>All-purpose flour</li>
-            <li>Natural unsweetened cocoa powder</li>
-            <li>Baking soda</li>
-            <li>Salt</li>
-            <li>Semi-sweet chocolate chunks</li>
+            <li><span>1.</span>Unsalted butter</li>
+            <li><span>2.</span>Granulated Sugar</li>
+            <li><span>3.</span>Packed light or dark brown sugar</li>
+            <li><span>4.</span>Large egg</li>
+            <li><span>5.</span>Pure vanilla extract</li>
+            <li><span>6.</span>Semi-sweet chocolate chunks (melted)</li>
+            <li><span>7.</span>All-purpose flour</li>
+            <li><span>8.</span>Natural unsweetened cocoa powder</li>
+            <li><span>9.</span>Baking soda</li>
+            <li><span>10.</span>Salt</li>
+            <li><span>11.</span>Semi-sweet chocolate chunks</li>
         </ul>
 
         <h3>Recipe Steps</h3> 
-        <ol class = "steps">
-            <li>In a mixing bowl cream together the butter, granulated sugar, and brown sugar</li>
-            <li>Add the egg and vanilla extract and beat well</li>
-            <li>Add the melted chocolate</li>
-            <li>In a separate bowl combine the flour, baking soda, cocoa powder and salt</li>
-            <li>Combine the wet and dry ingredients</li>
-            <li>Add the unmelted chocolate chunks.</li> 
-            <li>Form 15 cookies and place on a baking sheet.</li>
-            <li>Cook for 12 to 13 minutes at 350 degrees.</li>
-        </ol>
+        <ul class="steps">
+            <li><span>1.</span>In a mixing bowl cream together the butter, granulated sugar, and brown sugar</li>
+            <li><span>2.</span>Add the egg and vanilla extract and beat well</li>
+            <li><span>3.</span>Add the melted chocolate</li>
+            <li><span>4.</span>In a separate bowl combine the flour, baking soda, cocoa powder and salt</li>
+            <li><span>5.</span>Combine the wet and dry ingredients</li>
+            <li><span>6.</span>Add the unmelted chocolate chunks.</li>
+            <li><span>7.</span>Form 15 cookies and place on a baking sheet.</li>
+            <li><span>8.</span>Cook for 12 to 13 minutes at 350 degrees.</li>
+        </ul>
 
         <h3>Additional Food images</h3>
         <img src="images/double_chocolate_chips.png" width = "200" alt="A small pile of chocolate chips">
@@ -84,26 +102,26 @@
         <span>Source: Family Recipe,</span>
         <span>Category: Main Dish</span>
 
-        <img src="images/mapo_tofu.jpeg" alt="Mapo Tofu" width="300">
+        <img src="images/mapo_tofu.jpeg" alt="Mapo Tofu" width="300" class="first">
         
         <p>Need something smooth and spicy? Mapo Tofu is a simple tofu dish from Sichuan China. It's great over rice and easy to prep/save for college students! This recipe is for people who want to try authentic Chinese food but do not have Sichuan spices to use. </p>
         <h3>Recipe Ingredients</h3>
         <ul class = "ingredients">
-            <li>1 pack silken tofu</li>
-            <li>2 green onions, thinly sliced</li>
-            <li>1/2 lb ground pork</li>
-            <li>1 pack mapo tofu sauce (store bought)</li>
-            <li>3 cloves minced garlic</li>
-            <li>soy sauce to taste</li>
-            <li>2 tbsp cooking oil</li>
+            <li><span>1.</span>1 pack silken tofu</li>
+            <li><span>2.</span>2 green onions, thinly sliced</li>
+            <li><span>3.</span>1/2 lb ground pork</li>
+            <li><span>4.</span>1 pack mapo tofu sauce (store bought)</li>
+            <li><span>5.</span>3 cloves minced garlic</li>
+            <li><span>6.</span>soy sauce to taste</li>
+            <li><span>7.</span>2 tbsp cooking oil</li>
         </ul>
 
         <h3>Recipe Steps</h3> 
         <ol class="steps">
-            <li>Brown pork in wok with oil for 4-5 minutes</li>
-            <li>Add sauce and garlic, stir fry for 2 minutes</li>
-            <li>Add tofu and mix lightly as to not break up the tofu too much, until heated through</li>
-            <li>Add soy sauce, green onion and dish up</li>
+            <li><span>1.</span>Brown pork in wok with oil for 4-5 minutes</li>
+            <li><span>2.</span>Add sauce and garlic, stir fry for 2 minutes</li>
+            <li><span>3.</span>Add tofu and mix lightly as to not break up the tofu too much, until heated through</li>
+            <li><span>4.</span>Add soy sauce, green onion and dish up</li>
         </ol>
         
         <h3>Additional Food images</h3>
@@ -121,23 +139,23 @@
         <span>Source: Bobby Flay,</span>
         <span>Category: Lunch/Dinner</span>
 
-        <img src="images/perfect_burger.jpg" width = "400" alt="Burger with lettuce, cheese, tomato, buns, and patty">
-        <p>Bobby Flay's perfect burger recipe.</p>
+        <img src="images/perfect_burger.jpg" width = "400" alt="Burger with lettuce, cheese, tomato, buns, and patty" class="first">
+        <p>In Bobby Flay's perfect burger recipe, the culinary maestro elevates the art of burger crafting to new heights. With a harmonious blend of premium ground beef, meticulously selected seasonings, and the expert touch of grilling mastery, each bite promises a symphony of flavors that transcends the ordinary, making it a gastronomic experience that lingers in the memory long after the last savory morsel is savored.</p>
         <h3>Recipe Ingredients</h3>
         <ul class="ingredients">
-            <li>1 1/2 pounds ground chuck (80 percent lean) or ground turkey (90 percent lean)</li>
-            <li>Kosher salt and freshly ground black pepper</li>
-            <li>1 1/2 tablespoons canola oil</li>
-            <li>4 slices cheese (optional)</li>
-            <li>4 hamburger buns, split; toasted, if desired</li>
+            <li><span>1.</span>1 1/2 pounds ground chuck (80 percent lean) or ground turkey (90 percent lean)</li>
+            <li><span>2.</span>Kosher salt and freshly ground black pepper</li>
+            <li><span>3.</span>1 1/2 tablespoons canola oil</li>
+            <li><span>4.</span>4 slices cheese (optional)</li>
+            <li><span>5.</span>4 hamburger buns, split; toasted, if desired</li>
         </ul>
 
         <h3>Recipe Steps</h3> 
         <ol class = "steps">
-            <li>Divide the meat into 4 equal portions (about 6 ounces each). Form each portion loosely into a 3/4-inch-thick burger and make a deep depression in the center with your thumb. Season both sides of each burger with salt and pepper.</li>
-            <li>Heat a gas grill to high or heat coals in a charcoal grill until they glow bright orange and ash over. Brush the burgers with the oil. Grill the burgers until golden brown and slightly charred on the first side, about 3 minutes for beef and 5 minutes for turkey. Flip over the burgers. Cook beef burgers until golden brown and slightly charred on the second side, 4 minutes for medium rare (3 minutes if topping with cheese; see step 3) or until cooked to desired degree of doneness. Cook turkey burgers until cooked throughout, about 5 minutes on the second side.</li>
-            <li>Add the cheese, if using, to the tops of the burgers during the last minute of cooking and top with a basting cover, close the grill cover, or tent the burgers with aluminum foil to melt the cheese.</li> 
-            <li>Sandwich the hot burgers between the buns and serve immediately.</li>
+            <li><span>1.</span>Divide the meat into 4 equal portions (about 6 ounces each). Form each portion loosely into a 3/4-inch-thick burger and make a deep depression in the center with your thumb. Season both sides of each burger with salt and pepper.</li>
+            <li><span>2.</span>Heat a gas grill to high or heat coals in a charcoal grill until they glow bright orange and ash over. Brush the burgers with the oil. Grill the burgers until golden brown and slightly charred on the first side, about 3 minutes for beef and 5 minutes for turkey. Flip over the burgers. Cook beef burgers until golden brown and slightly charred on the second side, 4 minutes for medium rare (3 minutes if topping with cheese; see step 3) or until cooked to desired degree of doneness. Cook turkey burgers until cooked throughout, about 5 minutes on the second side.</li>
+            <li><span>3.</span>Add the cheese, if using, to the tops of the burgers during the last minute of cooking and top with a basting cover, close the grill cover, or tent the burgers with aluminum foil to melt the cheese.</li> 
+            <li><span>4.</span>Sandwich the hot burgers between the buns and serve immediately.</li>
         </ol>
 
         <h3>Additional Food images</h3>
@@ -153,21 +171,21 @@
         <span>Source: Jung Il-Woo,</span>
         <span>Category: Coffee</span>
 
-        <img src="images/Dalgona.webp" width = "400" alt="Milk with brown coffee cream on top (dalgona)">
-        <p>Dalgona Coffee</p>
+        <img src="images/Dalgona.webp" width = "400" alt="Milk with brown coffee cream on top (dalgona)" class="first">
+        <p>Dalgona Coffee, a viral sensation that took the internet by storm, is a delightful and indulgent beverage originating from South Korea. This frothy and creamy coffee creation involves whipping together equal parts of instant coffee, sugar, and hot water until a thick, velvety foam forms. As it gracefully crowns a glass of milk or your preferred dairy alternative, Dalgona Coffee not only tantalizes the taste buds with its rich and robust coffee flavor but also captivates with its visually striking, cloud-like appearance. The trend's global popularity attests to its simple yet magical transformation of humble ingredients into a luxurious and Instagram-worthy coffee experience that has become a beloved ritual for coffee enthusiasts worldwide.</p>
         <h3>Recipe Ingredients</h3>
         <ul class = "ingredients">
-            <li>2 tbsp. granulated sugar</li>
-            <li>2 tbsp. instant coffee</li>
-            <li>2 tbsp. cold water</li>
-            <li>Ice (optional)</li>
-            <li>Milk (or milk alternative)</li>
+            <li><span>1.</span>2 tbsp. granulated sugar</li>
+            <li><span>2.</span>2 tbsp. instant coffee</li>
+            <li><span>3.</span>2 tbsp. cold water</li>
+            <li><span>4.</span>Ice (optional)</li>
+            <li><span>5.</span>Milk (or milk alternative)</li>
         </ul>
 
         <h3>Recipe Steps</h3> 
         <ol class = "steps">
-            <li>In a medium bowl, combine sugar, coffee, and water. Using a hand mixer or a whisk, vigorously whisk until mixture turns silky smooth and shiny, then continue whisking until it thickens and holds its lofty, foamy shape. (If whisking by hand, it will take 8 to 12 minutes to get to optimal fluffiness.)</li>
-            <li>Fill a glass most of the way full with ice and milk, then dollop and swirl the whipped coffee mixture on top, mixing before drinking, if desired.</li> 
+            <li><span>1.</span>In a medium bowl, combine sugar, coffee, and water. Using a hand mixer or a whisk, vigorously whisk until mixture turns silky smooth and shiny, then continue whisking until it thickens and holds its lofty, foamy shape. (If whisking by hand, it will take 8 to 12 minutes to get to optimal fluffiness.)</li>
+            <li><span>2.</span>Fill a glass most of the way full with ice and milk, then dollop and swirl the whipped coffee mixture on top, mixing before drinking, if desired.</li> 
         </ol>
 
         <h3>Additional Food images</h3>
@@ -182,26 +200,26 @@
         <span>Source: Unknown,</span>
         <span>Category: Appetiezer</span>
 
-        <img src="images/cucumbersalad.jpg" width = "400" alt="Picture of cucumber salad">
-        <p>Cucumber salad</p>
+        <img src="images/cucumbersalad.jpg" width = "400" alt="Picture of cucumber salad" class="first">
+        <p>Korean Cucumber Salad, known as "Oi Muchim," is a refreshing and vibrant side dish that effortlessly captures the essence of Korean cuisine. Sliced cucumbers, meticulously arranged in delicate ribbons, serve as the crisp and hydrating base for this salad. The cucumbers are then bathed in a zesty dressing crafted from a harmonious blend of soy sauce, rice vinegar, sesame oil, and a hint of sugar.</p>
         <h3>Recipe Ingredients</h3>
         <ul class = "ingredients">
-            <li>1 cucumber (Japanese, English, Persian, Pickling are all good) about 1 1/2 cup sliced for 1 cucumber</li>
-            <li>1 Tbsp soy sauce (Jin Ganjang)</li>
-            <li>2 Tbsp rice vinegar</li>
-            <li>1 Tbsp sugar</li>
-            <li>1/2 tsp Korean red chili powder</li>
-            <li>1/4 tsp sesame seeds</li>
-            <li>2 green onions , chopped</li>
+            <li><span>1.</span>1 cucumber (Japanese, English, Persian, Pickling are all good) about 1 1/2 cup sliced for 1 cucumber</li>
+            <li><span>2.</span>1 Tbsp soy sauce (Jin Ganjang)</li>
+            <li><span>3.</span>2 Tbsp rice vinegar</li>
+            <li><span>4.</span>1 Tbsp sugar</li>
+            <li><span>5.</span>1/2 tsp Korean red chili powder</li>
+            <li><span>6.</span>1/4 tsp sesame seeds</li>
+            <li><span>7.</span>2 green onions , chopped</li>
         </ul>
 
         <h3>Recipe Steps</h3> 
         <ol class = "steps">
-            <li>Slice cucumbers into thin slices. Around 1/8 inch (3 mm).</li>
-            <li>Mix soy sauce, vinegar and sugar in a bowl. Pour soy vinegar into the bowl with cucumbers.</li> 
-            <li>Mix soy sauce, vinegar and sugar in a bowl. Pour soy vinegar into the bowl with cucumbers.</li> 
-            <li>Add chopped green onions and mix again.</li>
-            <li>Serve immediately for the most fresh and crunchy cucumber flavor.  You can also let it sit for 10-15 minutes for the cucumbers to absorb the dressing.</li>
+            <li><span>1.</span>Slice cucumbers into thin slices. Around 1/8 inch (3 mm).</li>
+            <li><span>2.</span>Mix soy sauce, vinegar and sugar in a bowl. Pour soy vinegar into the bowl with cucumbers.</li> 
+            <li><span>3.</span>Mix soy sauce, vinegar and sugar in a bowl. Pour soy vinegar into the bowl with cucumbers.</li> 
+            <li><span>4.</span>Add chopped green onions and mix again.</li>
+            <li><span>5.</span>Serve immediately for the most fresh and crunchy cucumber flavor.  You can also let it sit for 10-15 minutes for the cucumbers to absorb the dressing.</li>
         </ol>
 
         <h3>Additional Food images</h3>

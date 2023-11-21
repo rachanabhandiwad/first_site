@@ -1,23 +1,61 @@
 html{
     scroll-behavior: smooth;
   }
+nav{
+    font-family: monospace;
+    text-align: center;
+    margin: 30px;
+}
 h1{
     font-size: 40px;
-    font-family: 'Times New Roman','Times New Roman', Times, serif;
+    font-family: 'Sometype Mono',monospace;
     text-align: center;
 }
-body{
+#content {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#content button {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#content button:hover {
+    background-color: #45a049;
+}
+figcaption{
+    font-family: monospace;
+}
+#pets{
     background-color: #d9e4ff;
+    color: black;
+}
+#recipes{
+    background-color: #fcc9b5;
+    color: black;
+}
+#travels{
+    background-color: #cfebb6;
     color: black;
 }
 h2{
     font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: monospace;
     color: black;
+    text-align: center;
 }
 h3{
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: monospace;
     color: black;
 }
 .skip:focus{
@@ -29,6 +67,7 @@ h3{
 }
 p{
     line-height: 2.5;
+    font-family: monospace;
 }
 img{
     border-style: solid;
@@ -42,6 +81,10 @@ img{
     margin-right: 20px;
     margin-left: 20px;
 
+}
+img:hover{
+    border-style: dashed;
+    border-color: darkblue;
 }
 video{
     border-style: solid;
@@ -60,24 +103,134 @@ li{
     display:inline;
     margin-left: 80px;
 }
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+}
+.skip a:focus{
+    position:absolute;
+    top: 10px;
+}
+span{
+    font-family: monospace;
+}
+/* CSS */
+.button-55 {
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-55:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+  
+  .button-55:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+    text-decoration: underline;
+  }
+  
+  .ingredients{
+    font-family: monospace;
+  }
+  .steps{
+    font-family: monospace;
+  }
+  
+  .current-page button{
+    font-weight: bold;
+    background-color: #8babf1;
+    text-decoration: underline;
+    }
+  
+  
+  /* CSS */
+  .button-54 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-54:hover{
+      background-color: white;
+      text-decoration: underline;
+  }
+  
+  .button-54:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+  }
+  .button-54:focus {
+      box-shadow: 0px 0px 0px 0px;
+      top: 5px;
+      left: 5px;
+    }
+  
+  @media (min-width: 768px) {
+    .button-54 {
+      padding: 0.25em 0.75em;
+    }
+  }
 
 @media only screen and (max-width: 1000px){
-    nav{
-        border: 2px solid black;
+    nav a{
+        display: block;
     }
     
     nav a:hover{
-        background-color: blue;
+        background-color: white;
         text-decoration: underline;
-        color: white;
-        padding: 5px;
-        margin: 20px;
     }
     *:focus{
         border: 2px solid black;
         text-decoration: underline;
         background-color: white;
     }
+
     
     .skip a{
         background: white;
@@ -92,6 +245,7 @@ li{
     h3{
         size: 40px;
         text-decoration: underline;
+        text-align: center;
     }
     .skip a:focus{
         position:absolute;
@@ -119,18 +273,17 @@ li{
     .test li{
         display: block;
     }
-    #header a{
-        margin: 20px;
-    }
-    #header a:hover{
-        background-color: blue;
-        text-decoration: underline;
-        color: white;
-    }
     .recipe li{
         display: block;
     }
 }
+
+
+/*#header a:hover{
+    background-color: blue;
+    text-decoration: underline;
+    color: white;
+}*/
 
 
 /*.container{
@@ -140,6 +293,19 @@ li{
 }*/
 
 @media only screen and (max-width: 600px) {
+    a{
+        text-decoration: underline;
+    }
+    .option a{
+        display: block;
+        text-align: center;
+    }
+    nav a{
+        display: block;
+        text-align: center;
+    }
+
+    
     /* For mobile phones: */
     @keyframes example {
         from {color: black;
@@ -153,11 +319,6 @@ li{
     h1{
         animation-name: example;
         animation-duration: 5s;
-    }
-    .current-page {
-        font-weight: bold;
-        background-color: #8babf1;
-        text-decoration: underline;
     }
     nav{
         display: inline-block;
@@ -190,3 +351,101 @@ li{
         display: none;
     }
 }
+
+@media only screen and (min-width: 1000px){
+.first{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+h3{
+    text-decoration: underline;
+    text-align: center;
+}
+.likes li{
+    display: block;
+    text-align: left;
+    margin:auto;
+}
+.like{
+    text-align: left;
+}
+span{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+.ingredients {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    font-family: monospace;
+}
+
+.ingredients li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ingredients span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: url('/images/background.jpg'); /* Set the path to your background image */
+    background-size: cover; /* Adjust this property based on your image requirements */
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    margin-right: 10px;
+}
+
+.steps {
+    list-style-type: none;
+    padding: 0;
+    font-family:'Sometype Mono', monospace;
+}
+
+.steps li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.steps span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: url('/images/background.jpg'); /* Set the path to your background image */
+    background-size: cover; /* Adjust this property based on your image requirements */
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    margin-right: 10px;
+}
+
+.begin {
+    text-align: center;
+}
+figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* Set margin to 0 to remove any default margin */
+    padding: 10px;
+    font-family: monospace;
+    
+}
+}
+

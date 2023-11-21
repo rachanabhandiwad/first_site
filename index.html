@@ -1,41 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="icon" href="/images/pet_icon.png" type="image/x-icon"> 
 <head>
     <h1>Pets</h1>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/reset.css"> 
    <link rel="stylesheet" href="css/style.css"> 
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap">
+  
     <title>Document</title>
 </head>
-<body>
+<body id="pets">
     <div class="skip"><a href="">Skip to Main Content</a></div>
     <nav>
         <ul>
-            <li><a href="index.html" class="current-page">Home/Pets</a></li>
-            <li><a href = "recipes.html">Recipes</a></li>
-            <li><a href = "travel.html">Travel </a></li>
+            <li><a href="index.html" class="current-page" aria-label="Home/Pets">
+                <button class="button-54" role="button">Home/Pets</button>
+            </a></li>
+            <li><a href = "recipes.html" aria-label="Recipes">
+                <button class="button-54" role="button">Recipes</button>
+            </a></li>
+            <li><a href = "travel.html" aria-label="Travel">
+                <button class="button-54" role="button">Travel</button>
+            </a></li>
         </ul>
     </nav>
     <main class="container" id = "main">
         <header id="header">
             <h2>Select Pet</h2>
+                <div class="option">
                 <ul>
-                    <a href="#Candy">Candy</a>
-                    <a href="#Bacon">Bacon Q Dog</a>
-                    <a href="#Marmaduke">Marmaduke</a>
-                    <a href="#Beethoven">Beethoven</a>
-                    <a href="#Toto">Toto</a>
+                    <li><a href="#Candy" aria-label="Skip to Candy">
+                        <button class="button-55" role="button">Candy</button>
+                    </a></li>
+                    <li><a href="#Bacon" aria-label="Skip to Bacon Q Dog">
+                        <button class="button-55" role="button">Bacon Q Dog</button>
+                    </a></li>
+                    <li><a href="#Marmaduke" aria-label="Skip to Marmaduke">
+                        <button class="button-55" role="button">Marmaduke</button>
+                    </a></li>
+                    <li><a href="#Beethoven" aria-label="Skip to Beethoven">
+                        <button class="button-55" role="button">Beethoven</button>
+                    </a></li>
+                    <li><a href="#Toto" aria-label="Skip to Toto">
+                        <button class="button-55" role="button">Toto</button>
+                    </a></li>
                 </ul>
+                </div>
         </header>
         <div>
         <h2><a id="Candy">Candy</a></h2>
+            
             <img src="images/corgi_queen.webp" width = "400" alt="Small Welsh Corgi approaching a sitting Queen Elizabeth" class="first">
 
             <p>Candy was Queen Elizabeth's longest living dog companion. Candy was a mix between dashound and welsh corgi. She sadly passed just one week before Queen Elizabeth's passing at 18 years old, but she stood firmly by the queens side during her royal life. </p> 
             <P>Candy was one of the many Pembrooke Welsh Corgi's to accompany Queen Elizabeth during her reign. Queen Elizabath was known for loving corgis and had two by her side as she passed. Those two, Sandy and Muick, were passed down to the Duke and Duchess of York after the queen's passing.</P>
             <div class="test">
             <h3>Photo Gallery</h3>
+            
             <img src="images/candy_queen.webp" width ="200" alt = "Queen Elizabeth with Welsh Corgi in her arms">
             <img src="images/petting_corgi.webp"  width ="200" alt="Queen petting Welsh Corgi under chin">
             <video width="200"  controls >
@@ -44,7 +67,7 @@
             </video>
             <img src="images/queen_corgis.jfif"  width ="200" alt="Queen sat down surrounded by Welsh Corgis">
 
-            <h3>Likes</h3>
+            <h3 class="like">Likes</h3>
             <ul class = "likes">
                 <li>Fresh sheets</li>
                 <li>Strolls around Buckingham Palace</li>
@@ -67,7 +90,7 @@
                 </video>
                 <img src="images/bacon_halloween.JPG"  width ="200" alt="Brown labradoodle wearing a pirate costume">
     
-                <h3>Likes</h3>
+                <h3 class="like">Likes</h3>
                 <ul class = "likes">
                     <li>Belly rubs</li>
                     <li>Playing tug-of-war</li>
@@ -78,7 +101,7 @@
             </div>
         <div>        
             <h2><a id="Marmaduke">Marmaduke</a></h2>
-            <img src="images/Marmaduke_sunnies.jpg" width = "400" alt="Great Dane with sunglasses and head out the window">
+            <img src="images/Marmaduke_sunnies.jpg" width = "400" alt="Great Dane with sunglasses and head out the window" class="first">
     
             <p>Marmaduke is a Great Dane, living in rural Kansas with his best friend Carlos</p> 
             <P> Messy and mischievous Marmaduke has a big heart but can't stay out of trouble! </P>
@@ -90,7 +113,7 @@
             <img width="200"   src="images/marmaduke-winking.gif" alt= "Great Dane winking" class = "moving">
             <img src="images/marmaduke_bestie2.jpg"  width ="200" alt="Great Dane with smaller dogs surrounding">
     
-            <h3>Likes</h3>
+            <h3 class="like">Likes</h3>
             <ul class = "likes">
                 <li>Getting into trouble</li>
                 <li>Dog parks</li>
@@ -110,7 +133,7 @@
             <img src="images/beethoven_icecream.gif"  width ="200" alt="Saint Bernard sharing ice cream with boy" class = "moving">
             <img src="images/beethoven_bed.jfif"  width ="200" alt="Saint Bernard laying in bed with two humans">
     
-            <h3>Likes</h3>
+            <h3 class="like">Likes</h3>
             <ul class = "likes">
                 <li>Lazing around</li>
                 <li>Eating big meals</li>
@@ -129,7 +152,7 @@
             <img src="images/toto-hotdog.gif"  width ="200" alt="Terrier eating a sausage off a stick" class = "moving">
             <img src="images/toto_cute.jpg"  width ="200" alt="Terrier looking up next to someone's feet">
     
-            <h3>Likes</h3>
+            <h3 class="like">Likes</h3>
             <ul class = "likes">
                 <li>Dorothy</li>
                 <li>Sitting in baskets</li>
